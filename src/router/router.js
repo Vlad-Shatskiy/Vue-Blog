@@ -4,7 +4,7 @@ import PostPageWithStore from "@/pages/PostPageWithStore";
 import PostPageCompositionApi from "@/pages/PostPageCompositionApi";
 import PostIdPage from "@/pages/PostIdPage";
 
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
@@ -27,8 +27,8 @@ const routes = [
 ];
 
 const router = createRouter({
+  history: createWebHistory(),
   routes,
-  history: createWebHashHistory(),
 });
 
 export default router;
